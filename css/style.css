@@ -270,6 +270,7 @@ html {
 
 footer {
     background-color: var(--dark-clr);
+    margin-top: 0;
     padding-top: 95px;
     padding-bottom: 50px;
 }
