@@ -41,7 +41,9 @@ html {
     top: 0;
     left: 50%;
     width: 80%;
-    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
     padding-top: 35px;
 }
 
@@ -49,12 +51,20 @@ html {
 
 .nav-bar {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .nav-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -78,8 +88,12 @@ html {
 /* header content */
 
 .header-txt-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .header-h {
@@ -89,6 +103,8 @@ html {
 }
 
 .header-divided {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 25px;
 }
@@ -141,9 +157,13 @@ html {
 /* form  */
 
 .contact-form{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 50px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .form-left {
@@ -152,9 +172,16 @@ html {
 
 .form-right {
     width: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 #description {
@@ -165,6 +192,22 @@ html {
     color: var(--dark-clr);
     background-color: var(--form-bgr-clr);
     border: 1px solid var(--border-clr);
+}
+
+.form-element::-webkit-input-placeholder, #description::-webkit-input-placeholder {
+    color: var(--placeholder-clr);
+}
+
+.form-element::-moz-placeholder, #description::-moz-placeholder {
+    color: var(--placeholder-clr);
+}
+
+.form-element:-ms-input-placeholder, #description:-ms-input-placeholder {
+    color: var(--placeholder-clr);
+}
+
+.form-element::-ms-input-placeholder, #description::-ms-input-placeholder {
+    color: var(--placeholder-clr);
 }
 
 .form-element::placeholder,
@@ -189,9 +232,15 @@ html {
     width: 100%;
     height: 60px;
     border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .fa-location-arrow {
@@ -202,17 +251,32 @@ html {
  /* contact info */
 .contact-info {
     margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .contact-info-row {
     width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .contact-icon {
@@ -220,9 +284,15 @@ html {
     border-radius: 50%;
     width: 60px;
     height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 30px;
 }
 
@@ -253,8 +323,12 @@ html {
 /* images */
 
 .images {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 50px;
 }
 
@@ -281,6 +355,8 @@ footer {
 }
 
 .ftr-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -301,16 +377,26 @@ footer {
 }
 
 .ftr-contact-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .ftr-contact-icons > div {
     font-size: var(--ff-m);
     color: var(--main-clr);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 50%;
     height: 36px;
     width: 36px;
@@ -331,8 +417,12 @@ footer {
 
 .footer-list {
     width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .ftr-h {
@@ -359,8 +449,12 @@ footer {
 }
 
 .credits {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     color: var(--placeholder-clr);
     margin-top: 60px;
     width: 80%;
@@ -368,8 +462,12 @@ footer {
 }
 
 .ftr-divided {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .ftr-color {
