@@ -3,6 +3,10 @@ html {
     font-family: 'Poppins';
 }
 
+.width {
+    max-width: 1130px;
+}
+
 :root {
     --main-clr:#ffffff;
     --accent-clr:#5863f8;
